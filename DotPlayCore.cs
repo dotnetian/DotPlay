@@ -2,9 +2,79 @@
 using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
+using System;
 
 namespace Dotplay
 {
+	class IntAgent
+	{
+		public static int[] Split (int number)
+		{
+			string s = number.ToString ();
+			int a = int.Parse(s);
+			a = Math.Abs (a);
+			int length = a.ToString().Length;
+			int[] myArray = new int[length];
+
+			for (int i = 0; i < length; i++)
+			{
+				myArray[i] = a % 10;
+				a /= 10;
+			}
+
+			Array.Reverse (myArray);
+
+			return myArray;
+		}
+	}
+	class PlayerPrefsAgent
+	{
+		public static void SetBool (string id, bool boolian)
+		{
+			if (boolian)
+			{
+				PlayerPrefs.SetInt (id, 1);
+			}
+			else if (!boolian)
+			{
+				PlayerPrefs.SetInt (id, 0);
+			}
+		}
+		public static bool? GetBool (string id)
+		{
+			if (PlayerPrefs.GetInt (id) == 1)
+				return true;
+			else if (PlayerPrefs.GetInt (id) == 0)
+				return false;
+			else
+				return null;
+		}
+	}
+	enum CurrencyChangeType
+	{
+		Add,
+		Subtract,
+		Set
+	}
+	class CurrencyAgent
+	{
+		public static void Currency (byte id, CurrencyChangeType currencyChangeType, int amout)
+		{
+			if (currencyChangeType == CurrencyChangeType.Add)
+			{
+
+			}
+			else if (currencyChangeType == CurrencyChangeType.Subtract)
+			{
+
+			}
+			else if (currencyChangeType == CurrencyChangeType.Set)
+			{
+				int[] nums = IntAgent.Split (amout);
+			}
+
+		}
+	}
 	class SceneAgent
 	{
 		public static void Load (string scene)
@@ -29,21 +99,20 @@ namespace Dotplay
 			else
 				SceneManager.LoadSceneAsync (buildIndex);
 		}
-		public static void Unload ()
+		public virtual void Unload ()
 		{
 			SceneManager.UnloadSceneAsync (SceneManager.GetActiveScene ().name);
 		}
-		public static void Unload (int buildIndex)
+		public virtual void Unload (int buildIndex)
 		{
 			SceneManager.UnloadSceneAsync (buildIndex);
 		}
-		public static void Unload (string name)
+		public virtual void Unload (string name)
 		{
 			SceneManager.UnloadSceneAsync (name);
 		}
 	}
-
-	class TimeAgent : MonoBehaviour
+	class TimeAgent
 	{
 		public static void ScaleTime (float timeScale)
 		{
@@ -75,4 +144,6 @@ namespace Dotplay
 		}
 
 	}
+
+
 }
