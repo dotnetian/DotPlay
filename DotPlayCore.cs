@@ -99,11 +99,11 @@ namespace Dotplay
 			else
 				SceneManager.LoadSceneAsync (buildIndex);
 		}
-		public virtual void Unload ()
+		public static void Unload ()
 		{
 			SceneManager.UnloadSceneAsync (SceneManager.GetActiveScene ().name);
 		}
-		public virtual void Unload (int buildIndex)
+		public static void Unload (int buildIndex)
 		{
 			SceneManager.UnloadSceneAsync (buildIndex);
 		}
