@@ -9,6 +9,6 @@ These are some examples:
 #### Storing Boolean Data
 ![SetBool!](https://raw.githubusercontent.com/matinmn87/Unity-DotPlay/master/assets/img/SetBoolDotPlay.png)
 #### Spliting Integers
-![Split Int](https://raw.githubusercontent.com/matinmn87/Unity-DotPlay/master/assets/img/IntSplitDotPlay.png)
+![Split Int](https://raw.githubusercontent.com/matinmn87/Unity-DotPlay/master/assets/img/IntagerSplitDotPlay.png)
 #### Scaling Time & Audio Pitch
 ![ScaleTime](https://raw.githubusercontent.com/matinmn87/Unity-DotPlay/master/assets/img/ScaleTimeDotPlay.png)
