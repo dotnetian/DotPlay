@@ -1,13 +1,8 @@
-﻿using System.Collections;
-using UnityEngine;
-using System.Collections.Generic;
-using UnityEngine.SceneManagement;
-using System;
-
+﻿using UnityEngine;
 namespace DotPlay
 {
 	/// <summary>
-	/// TimeAgent has methods for time scaling & 
+	/// TimeAgent has methods for time scaling
 	/// </summary>
 	class TimeAgent
 	{

@@ -1,9 +1,4 @@
-﻿using System.Collections;
-using UnityEngine;
-using System.Collections.Generic;
-using UnityEngine.SceneManagement;
-using System;
-
+﻿using UnityEngine;
 namespace DotPlay
 {
 	/// <summary>
@@ -129,4 +124,5 @@ namespace DotPlay
 			return myTransform;
 		}
 	}
-}
+#endregion
+}}

@@ -1,7 +1,6 @@
-﻿using UnityEditor;
-using UnityEngine;
+﻿using UnityEngine;
 
-[AddComponentMenu("DotPlay/")]
+[AddComponentMenu ("DotPlay/")]
 public class PlayerMovement : MonoBehaviour
 {
 	public enum Mode
@@ -9,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
 		Vector3, WASD, Platformer
 	}
 
-	void Start()
+	void Start ()
 	{
 	}
 	#region Platformer Variables
