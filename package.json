@@ -7,19 +7,15 @@
     "unityRelease": "0b1",
     "documentationUrl": "https://github.com/matinmn87/Unity-DotPlay/wiki",
     "changelogUrl": "https://github.com/matinmn87/Unity-DotPlay/releases",
-    "licensesUrl": "https://example.com/licensing.html",
-    "dependencies": {
-        "com.[company-name].some-package": "1.0.0",
-        "com.[company-name].other-package": "2.0.0"
-    },
+    "licensesUrl": "https://github.com/matinmn87/Unity-DotPlay/blob/master/LICENSE",
+
     "keywords": [
-        "keyword1",
-        "keyword2",
-        "keyword3"
+        "DotPlay"
     ],
+
     "author": {
-        "name": "Unity",
-        "email": "unity@example.com",
-        "url": "https://www.unity3d.com"
+        "name": "Matin mohammadi",
+        "email": "matinmn87@gmail.com",
+        "url": "https://github.com/matinmn87/Unity-DotPlay/"
     }
 }
