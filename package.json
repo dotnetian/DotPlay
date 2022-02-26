@@ -1,18 +1,8 @@
 {
-    "name": "com.matin.DotPlay",
-    "version": "1.0.0",
+    "name": "com.matinmn87.dotplay",
     "displayName": "DotPlay",
-    "description": "(in development) The Free Framework for Unity game development. Including Library, Pre-coded components, samples & ...",
+    "version": "1.0.0",
     "unity": "2022.1",
-    "unityRelease": "0b1",
-    "documentationUrl": "https://github.com/matinmn87/Unity-DotPlay/wiki",
-    "changelogUrl": "https://github.com/matinmn87/Unity-DotPlay/releases",
-    "licensesUrl": "https://github.com/matinmn87/Unity-DotPlay/blob/master/LICENSE",
-
-
-    "author": {
-        "name": "Matin mohammadi",
-        "email": "matinmn87@gmail.com",
-        "url": "https://github.com/matinmn87/"
-    }
+    "description": "(in development) The Free Framework for Unity game development. Including Library, Pre-coded components, samples & ...",
+    "email": "matinmn87@gmail.com"
 }
