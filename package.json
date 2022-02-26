@@ -9,15 +9,10 @@
     "changelogUrl": "https://github.com/matinmn87/Unity-DotPlay/releases",
     "licensesUrl": "https://github.com/matinmn87/Unity-DotPlay/blob/master/LICENSE",
 
-    "keywords": [
-        "DotPlay",
-        "Unity-DotPlay",
-        ".Play"
-    ],
 
     "author": {
         "name": "Matin mohammadi",
         "email": "matinmn87@gmail.com",
-        "url": "https://github.com/matinmn87/Unity-DotPlay/"
+        "url": "https://github.com/matinmn87/"
     }
 }
