@@ -123,6 +123,6 @@ namespace DotPlay
 
 			return myTransform;
 		}
+	#endregion
 	}
-#endregion
-}}
+}
