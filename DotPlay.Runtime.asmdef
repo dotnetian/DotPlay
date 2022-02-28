@@ -1,5 +1,5 @@
 {
-    "name": "DotPlay.Runtime",
+    "name": "com.matinmn87.dotplay",
     "rootNamespace": "",
     "references": [],
     "includePlatforms": [],
