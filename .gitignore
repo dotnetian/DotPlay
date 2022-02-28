@@ -1,6 +1,11 @@
 .vs/
 bin/
+bin.meta
 obj/
+obj.meta
 *.csproj
 *.sln
+*.csproj.meta
+*.sln.meta
 MyDotPlay.cs
+MyDotPlay.cs.meta
