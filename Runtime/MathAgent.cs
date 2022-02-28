@@ -1,10 +1,11 @@
 ﻿using System;
+
 namespace DotPlay
 {
 	/// <summary>
 	/// MathAgent class, contains methods & tools for mathematical operations
 	/// </summary>
-	class MathAgent
+	public class MathAgent
 	{
 		/// <summary>
 		/// Split method, splits integers like string.Split()

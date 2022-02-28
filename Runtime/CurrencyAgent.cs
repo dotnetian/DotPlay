@@ -1,10 +1,11 @@
 ﻿using UnityEngine;
+
 namespace DotPlay
 {
 	/// <summary>
-	/// Types that currencies can change
+	/// Types that currencies can modify
 	/// </summary>
-	enum CurrencyChangeType
+	public enum CurrencyModifyType
 	{
 		Add,
 		Subtract,
@@ -15,7 +16,7 @@ namespace DotPlay
 	/// For game currencies encryption & to
 	/// prevent modifying game
 	/// </summary>
-	class CurrencyAgent
+	public class CurrencyAgent
 	{
 		/// <summary>
 		/// The Encrypted string
@@ -35,10 +36,10 @@ namespace DotPlay
 		/// <param name="id"></param>
 		/// <param name="currencyChangeType"></param>
 		/// <param name="amount"></param>
-		public static void SetCurrency (byte id, CurrencyChangeType currencyChangeType, int amount)
+		public static void Encrypt (byte id, CurrencyModifyType currencyChangeType, int amount)
 		{
 
-			if (currencyChangeType == CurrencyChangeType.Set)
+			if (currencyChangeType == CurrencyModifyType.Set)
 			{
 				int[] nums = MathAgent.Split (amount);
 
@@ -88,19 +89,19 @@ namespace DotPlay
 					}
 				}
 			}
-			else if (currencyChangeType == CurrencyChangeType.Add)
+			else if (currencyChangeType == CurrencyModifyType.Add)
 			{
-				int i = GetCurrency(id);
+				int i = Decrypt(id);
 				int iToPrefs = i + amount;
 
-				SetCurrency (id, CurrencyChangeType.Set, iToPrefs);
+				Encrypt (id, CurrencyModifyType.Set, iToPrefs);
 			}
-			else if (currencyChangeType == CurrencyChangeType.Subtract)
+			else if (currencyChangeType == CurrencyModifyType.Subtract)
 			{
-				int i = GetCurrency(id);
+				int i = Decrypt(id);
 				int iToPrefs = i - amount;
 
-				SetCurrency (id, CurrencyChangeType.Set, iToPrefs);
+				Encrypt (id, CurrencyModifyType.Set, iToPrefs);
 			}
 
 			PlayerPrefs.SetString ($"{id}.currency", _encryptedToPlayerPrefs);
@@ -111,7 +112,7 @@ namespace DotPlay
 		/// </summary>
 		/// <param name="id"></param>
 		/// <returns></returns>
-		public static int GetCurrency (byte id)
+		public static int Decrypt (byte id)
 		{
 			string s = PlayerPrefs.GetString($"{id}.currency");
 			string[] sSplited = s.Split();

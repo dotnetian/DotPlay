@@ -1,11 +1,12 @@
 ﻿using UnityEngine.SceneManagement;
+
 namespace DotPlay
 {
 	/// <summary>
 	/// Shortens & upgrades SceneManager methods
 	/// Used to make codes cleaner & easier to understand
 	/// </summary>
-	class SceneAgent
+	public class SceneAgent
 	{
 		#region Load
 		/// <summary>
@@ -54,7 +55,6 @@ namespace DotPlay
 				SceneManager.LoadSceneAsync (buildIndex);
 		}
 		#endregion
-
 		#region Unload
 		/// <summary>
 		/// Unloads the current active scene
@@ -80,6 +80,15 @@ namespace DotPlay
 		public static void Unload (string name)
 		{
 			SceneManager.UnloadSceneAsync (name);
+		}
+		#endregion
+		#region Reload
+		/// <summary>
+		/// Reloads the current active scene
+		/// </summary>
+		public static void Reload ()
+		{
+			Load (SceneManager.GetActiveScene ().name);
 		}
 		#endregion
 	}

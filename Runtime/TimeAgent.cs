@@ -5,7 +5,7 @@ namespace DotPlay
 	/// <summary>
 	/// TimeAgent has methods for time scaling
 	/// </summary>
-	class TimeAgent
+	public class TimeAgent
 	{
 		public static void ScaleTime (float timeScale)
 		{

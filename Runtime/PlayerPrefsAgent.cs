@@ -1,11 +1,12 @@
 ﻿using UnityEngine;
+
 namespace DotPlay
 {
 	/// <summary>
 	/// PlayerPrefsAgent gives you ability of
 	/// storing Boolean, Vector3 &... other kinds of data
 	/// </summary>
-	class PlayerPrefsAgent
+	public class PlayerPrefsAgent
 	{
 		#region Boolians
 		/// <summary>
