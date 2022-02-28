@@ -7,8 +7,8 @@ These are some examples:
 #### Unloading Scenes
 ![UnityEngine vs DotPlay in Scene Management](https://raw.githubusercontent.com/matinmn87/Unity-DotPlay/master/assets/img/UnloadDotPlay.png)
 #### Storing Boolean Data
-![SetBool!](https://raw.githubusercontent.com/matinmn87/Unity-DotPlay/master/assets/img/SetBoolDotPlay.png)
+![SetBool!](https://raw.githubusercontent.com/matinmn87/Unity-DotPlay/files/assets/img/SetBoolDotPlay.png)
 #### Spliting Integers
-![Split Int](https://raw.githubusercontent.com/matinmn87/Unity-DotPlay/master/assets/img/IntagerSplitDotPlay.png)
+![Split Int](https://raw.githubusercontent.com/matinmn87/Unity-DotPlay/files/assets/img/IntagerSplitDotPlay.png)
 #### Scaling Time & Audio Pitch
-![ScaleTime](https://raw.githubusercontent.com/matinmn87/Unity-DotPlay/master/assets/img/ScaleTimeDotPlay.png)
+![ScaleTime](https://raw.githubusercontent.com/matinmn87/Unity-DotPlay/files/assets/img/ScaleTimeDotPlay.png)
