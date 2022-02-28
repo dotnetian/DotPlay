@@ -1,7 +1,7 @@
 {
     "name": "com.matinmn87.dotplay",
     "displayName": "DotPlay",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "unity": "2022.1",
     "description": "(in development) The Free Framework for Unity game development. Including Library, Pre-coded components, samples & ...",
     "documentationUrl": "https://github.com/matinmn87/Unity-DotPlay/wiki",
