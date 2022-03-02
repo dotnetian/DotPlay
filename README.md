@@ -5,7 +5,7 @@ What you need to make your code, cleaner & easier to understand.
 ### Features
 These are some examples:
 #### Unloading Scenes
-![UnityEngine vs DotPlay in Scene Management](https://raw.githubusercontent.com/matinmn87/Unity-DotPlay/master/assets/img/UnloadDotPlay.png)
+![UnityEngine vs DotPlay in Scene Management](https://raw.githubusercontent.com/matinmn87/Unity-DotPlay/img/assets/img/UnloadDotPlay.png)
 #### Storing Boolean Data
 ![SetBool!](https://raw.githubusercontent.com/matinmn87/Unity-DotPlay/files/assets/img/SetBoolDotPlay.png)
 #### Spliting Integers
