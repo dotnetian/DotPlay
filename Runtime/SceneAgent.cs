@@ -6,7 +6,7 @@ namespace DotPlay
 	/// Shortens & upgrades SceneManager methods
 	/// Used to make codes cleaner & easier to understand
 	/// </summary>
-	public class SceneAgent
+	public class SceneAgent : MonoBehaviour
 	{
 		#region Load
 		/// <summary>
