@@ -1,4 +1,4 @@
-# DotPlay [![openupm](https://img.shields.io/npm/v/com.matinmn87.dotplay?label=openupm&registry_uri=https://package.openupm.com)](https://openupm.com/packages/com.matinmn87.dotplay/) ![GitHub](https://img.shields.io/github/license/matinmn87/unity-dotplay)
+# DotPlay [![openupm](https://img.shields.io/npm/v/com.matinmn87.dotplay?label=openupm&registry_uri=https://package.openupm.com)](https://openupm.com/packages/com.matinmn87.dotplay/) ![GitHub](https://img.shields.io/github/license/matinmn87/unity-dotplay) ![GitHub last commit](https://img.shields.io/github/last-commit/matinmn87/unity-dotplay)
 The Free Framework for Unity game development. Including Library, Pre-coded components, samples & ... DotPlay is featuring these stuff, yet:
 ## DotPlay Namespace
 What you need to make your code, cleaner & easier to understand.
