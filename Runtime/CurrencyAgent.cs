@@ -115,55 +115,61 @@ namespace DotPlay
 		public static int Decrypt (byte id)
 		{
 			string s = PlayerPrefs.GetString($"{id}.currency");
-			string[] sSplited = s.Split();
+			char[] sSplited = s.ToCharArray();
 
 			for (int i = 0; i < sSplited.Length; i++)
 			{
 				switch (sSplited[i])
 				{
-					case "a":
+					case 'a':
 					_encryptedFromPlayerPrefs += "0";
 					break;
 
-					case "b":
+					case 'b':
 					_encryptedFromPlayerPrefs += "1";
 					break;
 
-					case "c":
+					case 'c':
 					_encryptedFromPlayerPrefs += "2";
 					break;
 
-					case "d":
+					case 'd':
 					_encryptedFromPlayerPrefs += "3";
 					break;
 
-					case "e":
+					case 'e':
 					_encryptedFromPlayerPrefs += "4";
 					break;
 
-					case "f":
+					case 'f':
 					_encryptedFromPlayerPrefs += "5";
 					break;
 
-					case "g":
+					case 'g':
 					_encryptedFromPlayerPrefs += "6";
 					break;
 
-					case "h":
+					case 'h':
 					_encryptedFromPlayerPrefs += "7";
 					break;
 
-					case "i":
+					case 'i':
 					_encryptedFromPlayerPrefs += "8";
 					break;
 
-					case "j":
+					case 'j':
 					_encryptedFromPlayerPrefs += "9";
 					break;
 				}
 			}
 
+			if (string.IsNullOrWhiteSpace(_encryptedFromPlayerPrefs))
+			{
+				return 0;
+			}
+
 			return int.Parse (_encryptedFromPlayerPrefs);
+			//TODO: FIX ERRORS
 		}
 	}
 }
